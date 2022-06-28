@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "DavidAnson.vscode-markdownlint",
+    "dendron.dendron-paste-image",
+    "dendron.dendron",
+    "EditorConfig.EditorConfig",
+    "Gruntfuggly.todo-tree",
+    "julialang.language-julia",
+    "streetsidesoftware.code-spell-checker",
+    "vivaxy.vscode-conventional-commits",
+  ]
+}

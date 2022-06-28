@@ -1,0 +1,6 @@
+.dendron.*
+.next
+build
+node_modules
+pods/service-connections
+seeds

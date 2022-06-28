@@ -1,0 +1,68 @@
+{
+    "version": "0.2",
+    "ignorePaths": [
+      ".cspell.json",
+      ".git",
+      "**/.cspell/**",
+      "**/.gitattributes",
+      "**/.github/**",
+      "**/.gitignore",
+      "**/.vscode/**",
+      "**/dendron.code-workspace",
+      "**/dendron.yml"
+    ],
+    "dictionaryDefinitions": [
+      {
+        "name": "organizations",
+        "path": ".cspell/organizations.txt",
+        "addWords": true,
+        "scope": "workspace"
+      }
+    ],
+    "dictionaries": [
+      "organizations"
+    ],
+    "words": [],
+    "ignoreWords": [
+      "dendron",
+      "frontmatter",
+      "wikilink"
+    ],
+    "import": [],
+    "language": "en",
+    "languageSettings": [
+      {
+        "languageId": "markdown",
+        "locale": "*",
+        "patterns": [
+          {
+            "name": "code-inline",
+            "pattern": "/`[\\s\\S]*?`/gm"
+          },
+          {
+            "name": "code-block",
+            "pattern": "/```[a-z]*\\n[\\s\\S]*?\\n```/gm"
+          },
+          {
+            "name": "frontmatter-id",
+            "pattern": "/^id:\\s[a-zA-Z0-9]+$/gm"
+          },
+          {
+            "name": "markdown-link-target",
+            "pattern": "/\\([\\.\\-\\:\\/$a-zA-Z0-9]*?\\)/gm"
+          },
+          {
+            "name": "wikilink",
+            "pattern": "/[\\.\\-\\#\\^a-zA-Z0-9]*?\\]\\]/gm"
+          }
+        ]
+      }
+    ],
+    "ignoreRegExpList": [
+      "code-inline",
+      "code-block",
+      "frontmatter-id",
+      "markdown-link-target",
+      "wikilink"
+    ]
+}
